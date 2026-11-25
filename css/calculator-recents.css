@@ -1,0 +1,6 @@
+/* calculator-recents.css — clear recents button */
+/* ===== calculator: clear recents ===== */
+.cp-hh{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:4px}
+.cp-hh h3{margin:0!important}
+.cp-hist .cp-clr{width:auto;display:inline-block;padding:4px 10px;border:1px solid #5a141c;border-radius:6px;background:#1a0b0e;color:#d8808a;font-family:var(--font-util);font-size:12px;letter-spacing:.05em}
+.cp-hist .cp-clr:hover{background:#3f1117;color:#fff}

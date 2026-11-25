@@ -1,0 +1,27 @@
+/* haunted-calculator.css — claw gashes + shattering keys */
+/* ===== haunted calculator: realistic claw gashes + shattering keys ===== */
+.cp{position:relative}
+.cp-keys button,.calc .keys button{position:relative}
+.calc .lcd,.cp-lcd{position:relative}
+.cp-keys button.brk,.calc .keys button.brk{transform:translateY(var(--dy,3px)) rotate(var(--r,-4deg)) scale(.96);background:#0a0405;color:#4d3b3d;
+  box-shadow:inset 0 -3px 5px rgba(0,0,0,.9),inset 0 0 0 1px #2a1013;filter:brightness(.8);transition:transform .2s;animation:kbash .32s ease-out}
+@keyframes kbash{0%{transform:scale(1.18) rotate(0)}45%{transform:scale(.88) translateY(5px)}100%{}}
+.brk.rattle{animation:rattle .22s linear}
+@keyframes rattle{0%,100%{translate:0}25%{translate:-2px 1px}50%{translate:2px -1px}75%{translate:-1px 0}}
+.kcr{position:absolute;inset:0;pointer-events:none;z-index:3}
+.kcr svg{display:block;width:100%;height:100%}
+.lcdcr{z-index:4;border-radius:inherit}
+.haunted{animation:hshake .5s linear}
+@keyframes hshake{0%,100%{translate:0}10%{translate:-5px 2px}25%{translate:5px -2px}40%{translate:-4px -1px}55%{translate:4px 2px}70%{translate:-2px 0}85%{translate:2px 1px}}
+.hflash{animation:hflash .9s ease-out}
+@keyframes hflash{0%{box-shadow:inset 0 0 60px 6px rgba(210,0,20,.8)}100%{box-shadow:inset 0 0 0 0 rgba(210,0,20,0)}}
+.haunted.hflash{animation:hshake .5s linear,hflash .9s ease-out}
+.claws{position:absolute;left:0;top:0;z-index:9;pointer-events:none;overflow:visible;transition:opacity 1s ease;filter:drop-shadow(1px 2px 1.5px rgba(0,0,0,.85))}
+.claws.out{opacity:0}
+.claws .rv{fill:none;stroke:#fff;stroke-width:46;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;animation:rv .2s ease-in forwards}
+.claws .dr{fill:none;stroke:#6e0610;stroke-width:1.7;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;animation:rv 1.5s ease-in .55s forwards}
+.claws .db{fill:#7a0812;opacity:0;animation:dbf .3s ease-out 1.9s forwards}
+@keyframes rv{to{stroke-dashoffset:0}}
+@keyframes dbf{to{opacity:1}}
+@media(prefers-reduced-motion:reduce){.claws .rv,.claws .dr{stroke-dashoffset:0!important}.claws .db{opacity:1!important}}
+.kshard{position:fixed;z-index:85;pointer-events:none;will-change:transform}

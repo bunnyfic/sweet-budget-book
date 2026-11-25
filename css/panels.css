@@ -1,0 +1,38 @@
+/* panels.css — panel / form / row styles */
+/* panel */
+.panel{min-width:0}
+.sum{margin:0 0 10px;color:var(--muted);font-size:14px}
+.rows{display:flex;flex-direction:column}
+.row{display:flex;flex-wrap:wrap;align-items:center;gap:4px 8px;padding:6px 6px 6px 10px;border-bottom:1px solid var(--line);border-left:4px solid var(--c,transparent)}
+.row .in{background:transparent;border-color:transparent}
+.row .in:hover{background:var(--card-soft)}
+.row .in:focus{background:var(--card);border-color:var(--pink-deep)}
+.in{border:1px solid var(--line);background:var(--card-soft);border-radius:8px;padding:7px 9px;min-width:0;min-height:38px}
+.in.grow{flex:1 1 150px}
+.in.dayin{width:54px;text-align:center}
+.in.amt{width:98px;text-align:right;font-variant-numeric:tabular-nums}
+select.in{max-width:150px}
+.del{width:34px;height:34px;border-radius:50%;border:0;background:transparent;color:var(--muted);font-size:20px;line-height:1}
+.del:hover{background:var(--pink);color:var(--rose-ink)}
+.chk{width:22px;height:22px;accent-color:var(--rose-ink);flex:none}
+.addrow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding:10px;margin-bottom:6px;border-radius:10px;background:var(--card-soft);border:1px solid var(--line)}
+.addrow .in{background:var(--card)}
+@media(max-width:560px){.row .in.grow,.addrow .in.grow{flex-basis:100%}}
+@media(max-width:899px){.panel{order:-1}}
+@media(max-width:560px){
+  .row .in{background:var(--card-soft);border-color:var(--line)}
+  .rowx{display:grid;grid-template-columns:minmax(0,1fr) 46px 76px 28px;gap:4px;padding-right:2px}
+  .rowx .del{width:28px}
+  .rowx select.in{padding-left:6px;padding-right:2px}
+  .rowx .in.dayin,.rowx .in.amt{padding-left:4px;padding-right:6px}
+  .rowx .grow{grid-column:1/-1}
+  .rowx select.in{max-width:none;min-width:0;width:100%}
+  .rowx .in.dayin,.rowx .in.amt{width:100%}
+  .addrow .in.dayin{width:64px}
+}
+.empty{display:flex;flex-direction:column;align-items:center;gap:6px;padding:22px 8px;color:var(--muted);text-align:center}
+.empty img{width:120px;height:auto}
+.filter{display:inline-flex;align-items:center;gap:8px;margin:0 0 8px;padding:4px 6px 4px 12px;border-radius:999px;background:var(--pink);font-size:13px}
+.filter button{color:var(--ink);border:0;background:var(--card);border-radius:50%;width:24px;height:24px;line-height:1}
+.catdot{display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--c);margin-right:6px;vertical-align:baseline}
+.foot{display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:space-between;margin-top:12px}

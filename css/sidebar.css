@@ -1,0 +1,23 @@
+/* sidebar.css — sidebar (original rules) */
+/* sidebar */
+.mobcalc{display:inline-block}@media(min-width:900px){.mobcalc{display:none}}
+.navcard{display:none}
+@media(min-width:900px){.navcard{display:block}}
+.nav{display:none;flex-direction:column;gap:4px}
+@media(min-width:900px){.nav{display:flex}.rail{align-self:start}}
+.nav button{display:flex;align-items:center;gap:10px;padding:5px 8px;border:0;border-radius:10px;background:transparent;color:var(--ink);text-align:left;font-family:var(--font-display);font-weight:700;text-transform:lowercase}
+.nav button img{width:34px;height:34px;object-fit:contain;border-radius:8px;background:#000;border:1px solid var(--line)}
+.nav button:hover{background:var(--card-soft)}
+.nav button[aria-current="true"]{background:var(--pink)}
+.nav button small{margin-left:auto;font-family:var(--font-body);font-weight:400;color:var(--muted);font-variant-numeric:tabular-nums}
+.mixrow{display:grid;gap:3px;margin-bottom:9px;font-size:13.5px}
+.mixrow .l{display:flex;justify-content:space-between;gap:8px}
+.mixrow .l span:last-child{font-variant-numeric:tabular-nums}
+.mixrow .b{height:8px;border-radius:99px;background:var(--card-soft);border:1px solid var(--line);overflow:hidden}
+.mixrow .b i{display:block;height:100%;border-radius:99px;background:var(--c)}
+.mixnone{margin:0;color:var(--muted);font-size:13.5px}
+.fact{display:flex;justify-content:space-between;gap:10px;padding:6px 0;border-bottom:1px solid var(--line);font-size:13.5px}
+.fact:last-child{border-bottom:0}
+.fact span:first-child{color:var(--muted)}
+.fact b{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.fact.stack{flex-direction:column;gap:0}.fact.stack b{text-align:left;white-space:normal;overflow-wrap:anywhere}

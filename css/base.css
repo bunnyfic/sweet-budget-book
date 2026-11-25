@@ -1,0 +1,23 @@
+/* base.css — tokens, reset, layout basics */
+:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}
+/* layout: translucent header over the user's background art, four "database" cards that double as tabs,
+   notion-style 3-column grid (flip tiles + summary | table panel | calendar + to-dos), floating wishlist calculator */
+:root{
+  --bg:#090909; --card:#110809; --card-soft:#1a0b0e; --ink:#acacac; --muted:#808080;
+  --pink:#280e11; --pink-deep:#5a141c; --rose-ink:#c8404c; --line:#2d1519;
+  --good:#86a88f; --warn:#e2554c; --on-accent:#e4e4e4; --hd1:#280e11; --hd2:#3f1117; --fog:#353535;
+  --shadow:0 0 0 1px rgba(63,17,23,.35),0 10px 30px rgba(0,0,0,.65);
+  --font-display:'IM Fell English',Georgia,serif; --font-body:'EB Garamond',Georgia,serif; --font-util:'Special Elite','Courier New',monospace; --font-gothic:'Reenie Beanie','Segoe Print','Bradley Hand',cursive;
+  color-scheme:dark;
+}
+
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{background:var(--bg);color:var(--ink);font-family:var(--font-body);font-size:15px;line-height:1.5;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:14px 90px}
+.app{position:relative;max-width:1120px;margin:0 auto;display:flex;flex-direction:column;gap:16px}
+button,input,select{font:inherit;color:inherit}
+button{cursor:pointer}
+:focus-visible{outline:2px solid var(--rose-ink);outline-offset:2px}
+h1,h2,h3{font-family:var(--font-display);margin:0;font-weight:700;text-transform:lowercase}
+.num{font-variant-numeric:tabular-nums}

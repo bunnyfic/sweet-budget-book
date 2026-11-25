@@ -1,0 +1,17 @@
+/* header.css — top header */
+/* header */
+.top{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px;padding:16px 18px;border-radius:14px;
+  background:var(--card);border:1px solid var(--line);box-shadow:var(--shadow)}
+.top h1{font-size:clamp(26px,6vw,38px);line-height:1.05;color:var(--rose-ink)}
+.top p{margin:4px 0 0;color:var(--muted);font-size:14px}
+.ctrls{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.monthnav{display:flex;align-items:center;gap:4px;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:3px}
+.monthnav button{width:34px;height:34px;border-radius:50%;border:0;background:var(--pink);color:var(--ink);font-size:18px;line-height:1}
+.monthnav span{min-width:128px;text-align:center;font-family:var(--font-display);font-weight:700;text-transform:lowercase}
+.sel{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:7px 12px}
+
+.sample{display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding:10px 14px;border-radius:12px;background:var(--card);border:1px dashed var(--pink-deep);font-size:14px}
+.sample span{flex:1 1 220px}
+.btn{border:0;border-radius:10px;background:var(--pink-deep);color:var(--on-accent);padding:8px 16px;font-weight:600;min-height:38px}
+.btn.soft{background:var(--pink);color:var(--ink)}
+.btn:active{transform:translateY(1px)}

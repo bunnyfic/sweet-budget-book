@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320" role="img" aria-label="Sweet Budget Book — it is always watching">
+  <defs>
+    <radialGradient id="g" cx="50%" cy="45%" r="75%"><stop offset="0" stop-color="#2a0a10"/><stop offset="1" stop-color="#070304"/></radialGradient>
+    <filter id="glow" x="-20%" y="-50%" width="140%" height="200%"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="320" fill="url(#g)"/>
+  <g fill="none" stroke="#5a141c" stroke-width="1.4" opacity=".7">
+    <circle cx="600" cy="160" r="150"/><circle cx="600" cy="160" r="120" stroke-dasharray="3 7"/>
+    <path d="M600 10v300M450 160h300M494 54l212 212M706 54L494 266"/>
+  </g>
+  <g fill="#8a1c26">
+    <path d="M0 0h1200v18c-30 0-30 30-60 30s-30-26-60-26-24 62-52 62-26-44-60-44-24 26-52 26-30-50-62-50-26 38-56 38-28-64-60-64-26 30-60 30-24-46-54-46-30 72-58 72-24-30-56-30-26 40-58 40-28-58-60-58-26 34-56 34-24-50-58-50-28 26-58 26-24-40-56-40-30 48-60 48-24-34-56-34-26 56-58 56-28-30-60-30-26-42-58-42-24 60-56 60-30-36-60-36-24 28-60 28-26-44-58-44-28 40-58 40-24-26-56-26-30 44-60 44-24-50-56-50-28 30-58 30-24-34-56-34V0z" opacity=".9"/>
+  </g>
+  <g filter="url(#glow)" fill="#e04450" text-anchor="middle">
+    <text x="600" y="170" font-family="'IM Fell English','Reenie Beanie','Segoe Print',Georgia,serif" font-size="92" font-style="italic" fill="#e04450" stroke="#7a1f27" stroke-width="1">sweet budget book</text>
+  </g>
+  <text x="600" y="222" text-anchor="middle" font-family="'Special Elite','Courier New',monospace" font-size="22" letter-spacing="7" fill="#c9c9c9">IT IS ALWAYS WATCHING</text>
+  <g transform="translate(600 272)" stroke="#c8404c" stroke-width="2" fill="none">
+    <path d="M-34 0s14-18 34-18 34 18 34 18-14 18-34 18S-34 0-34 0z" fill="#12080a"/>
+    <circle r="9" fill="#b3232f" stroke="none"/><circle r="3.4" fill="#000" stroke="none"/>
+  </g>
+</svg>

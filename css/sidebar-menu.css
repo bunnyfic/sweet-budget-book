@@ -1,0 +1,12 @@
+/* sidebar-menu.css — sidebar menu skin */
+/* ===== sidebar menu: same style as the title-screen menu ===== */
+.snav{gap:2px;padding:12px 6px;background:#000;border-top:2px dotted #8a8a8a;border-bottom:2px dotted #8a8a8a;border-radius:0}
+.snav button{all:unset;box-sizing:border-box;cursor:pointer;width:100%;display:flex;align-items:center;padding:3px 10px;
+  font-family:var(--font-util);font-size:17px;letter-spacing:.04em;color:#e8e8e8;text-align:left;background:transparent;box-shadow:none;border-radius:0}
+.snav .ti{display:none!important}
+.snav .lab{flex-direction:row;align-items:baseline;justify-content:space-between;gap:10px;width:100%;text-align:left}
+.snav .lab b,.snav button:hover .lab b{font-family:var(--font-util);font-weight:400;font-size:17px;line-height:1.4;text-transform:lowercase;letter-spacing:.04em;color:inherit;text-shadow:none;filter:none}
+.snav .lab small{font-family:var(--font-util);font-size:12px;letter-spacing:.02em;text-transform:none;color:#8a8a8a;margin:0}
+.snav button:hover,.snav button:focus-visible,.snav button[aria-current="page"]{background:#d90000;color:#fff;box-shadow:none}
+.snav button:focus-visible{outline:2px solid #fff;outline-offset:1px}
+.snav button:hover .lab small,.snav button:focus-visible .lab small,.snav button[aria-current="page"] .lab small{color:#ffd0d0}

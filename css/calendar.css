@@ -1,0 +1,20 @@
+/* calendar.css — calendar */
+/* calendar */
+.side{display:flex;flex-direction:column;gap:14px}
+.cal .head{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;font-family:var(--font-display);text-transform:lowercase;font-weight:700}
+.cal .dow,.cal .days{display:grid;grid-template-columns:repeat(7,1fr);gap:2px;text-align:center}
+.cal .dow span{font-size:11px;color:var(--muted);padding:2px 0}
+.day{color:var(--ink);position:relative;aspect-ratio:1;border:0;background:transparent;border-radius:8px;font-variant-numeric:tabular-nums;font-size:13px;padding:0}
+.day:hover{background:var(--card-soft)}
+.day.has::after{content:"";position:absolute;left:50%;bottom:3px;width:5px;height:5px;margin-left:-2.5px;border-radius:50%;background:var(--rose-ink)}
+.day.today{background:var(--pink);font-weight:700}
+.day.pick{outline:2px solid var(--rose-ink)}
+.day.blank{pointer-events:none}
+.note{margin:8px 0 0;font-size:12px;color:var(--muted)}
+.todo{display:flex;align-items:center;gap:8px;padding:5px 0;border-bottom:1px solid var(--line)}
+.todo input.t{flex:1;min-width:0;border:0;background:transparent;padding:6px 2px}
+.todo.done input.t{text-decoration:line-through;color:var(--muted)}
+.todoadd{display:flex;gap:6px;margin-bottom:6px}
+.todoadd .in{flex:1}
+
+.fine{text-align:center;color:var(--muted);font-size:12.5px}

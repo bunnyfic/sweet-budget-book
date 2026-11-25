@@ -1,0 +1,11 @@
+{
+  "name": "sweet-budget-book",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A haunted little budget tracker. Static site: HTML, CSS and plain JavaScript.",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx serve ."
+  },
+  "license": "MIT"
+}

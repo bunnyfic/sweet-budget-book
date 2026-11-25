@@ -1,0 +1,13 @@
+/* rail.css — overview rail */
+/* rail */
+.rail{display:flex;flex-direction:column;gap:14px}
+.tiles{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.tile{background:var(--pink);border-radius:10px;padding:10px 6px 8px;text-align:center;position:relative}
+.tile::after{content:"";position:absolute;left:0;right:0;top:50%;height:1px;background:rgba(172,172,172,.18)}
+.tile b{display:block;font-family:var(--font-display);font-size:44px;line-height:1;color:var(--rose-ink);font-variant-numeric:tabular-nums}
+.tile small{display:block;margin-top:6px;font-size:11px;letter-spacing:.08em;text-transform:lowercase;color:var(--ink)}
+.sumlist{display:flex;flex-direction:column;gap:6px}
+.sumrow{display:flex;justify-content:space-between;gap:8px;padding:8px 12px;border:1px solid var(--line);border-radius:8px;background:var(--card)}
+.sumrow span:first-child{color:var(--muted)}
+.sumrow b{font-variant-numeric:tabular-nums}
+.sumrow.big{background:var(--card-soft)}
